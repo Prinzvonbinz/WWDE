@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Was würdest du eher?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="editor" class="hidden">
+    <h2>Optionen bearbeiten</h2>
+    <ul id="optionList"></ul>
+    <input type="text" id="newOption" placeholder="Neue Option" />
+    <button onclick="addOption()">Hinzufügen</button>
+    <button onclick="closeEditor()">Fertig</button>
+  </div>
+
+  <div id="game">
+    <div class="option left" onclick="choose('left')"></div>
+    <div class="middle"></div>
+    <div class="option right" onclick="choose('right')"></div>
+    <div id="editIcon" onclick="openEditor()">✏️</div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
